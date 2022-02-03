@@ -2,8 +2,10 @@
         visit 'https://www.youtube.com/'
     end
   
-    Então('eu busco o canal {string}') do |nome_canal|
-        pending # Write code here that turns the phrase above into concrete actions
+    Então('eu busco o canal {string}') do |canal|
+        find('input[id=search]').set canal
+        click_button(id:'search-icon-legacy')
+        sleep 15
     end
   
     Quando('eu clico no canal') do
