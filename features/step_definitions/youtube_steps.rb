@@ -2,18 +2,19 @@
         visit 'https://www.youtube.com/'
     end
   
-    Então('eu busco o canal {string}') do |canal|
+    E('eu busco o canal {string}') do |canal|
         find('input[id=search]').set canal
         click_button(id:'search-icon-legacy')
-        sleep 15
     end
   
     Quando('eu clico no canal') do
-        pending # Write code here that turns the phrase above into concrete actions
+        find('#channel-title').click
+        sleep 3
     end
   
-    Quando('clico em {string}') do |sobre|
-        pending # Write code here that turns the phrase above into concrete actions
+    E('clico em sobre') do
+        find(:xpath, '//*[@id="tabsContent"]/tp-yt-paper-tab[6]/div').click
+        sleep 10
     end
   
     Então('dou um print no numero de inscritos e no nome do canal') do
