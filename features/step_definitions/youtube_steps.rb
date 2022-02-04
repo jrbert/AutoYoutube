@@ -9,14 +9,13 @@
   
     Quando('eu clico no canal') do
         find('#channel-title').click
-        sleep 3
     end
   
     E('clico em sobre') do
         find(:xpath, '//*[@id="tabsContent"]/tp-yt-paper-tab[6]/div').click
-        sleep 10
+        sleep 2
     end
   
     Então('dou um print no numero de inscritos e no nome do canal') do
-        pending # Write code here that turns the phrase above into concrete actions
+        save_screenshot("sample.png")
     end
