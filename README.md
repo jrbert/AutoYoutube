@@ -12,6 +12,7 @@ Selenium-Webdriver
 
 Não sendo muito familiarizado com Ruby \
 comecei estudando com pequenos cursos na internet através do youtube. \
+Preparei o VS Code instalando as gems que eu usei no projeto e comecei a fazer os códigos. \
 Com certa facilidade eu consegui acessar a página do youtube, \
 buscar o canal da D1 dentro do site e também acessar a página do canal. \
 A partir daqui surgiu a minha maior dificuldade, que foi acessar a aba "sobre". \
