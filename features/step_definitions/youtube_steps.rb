@@ -1,4 +1,3 @@
-    
     Dado('que eu acesso a pagina do Youtube') do
         visit 'https://www.youtube.com/'
     end
